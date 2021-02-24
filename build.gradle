@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'application'
+    //id 'game'
 }
 
 group 'com.up201905407.hero'
@@ -23,6 +24,7 @@ test {
 application {
     mainClass.set("Application")
 }
+
 
 
 
