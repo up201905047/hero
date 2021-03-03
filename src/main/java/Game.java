@@ -57,6 +57,7 @@ public class Game {
                 KeyStroke k = screen.readInput();
                 ctrl = processKey(k);
                 arena.retrieveCoins();
+                if (arena.verifyMonsterCollisions()) ctrl = false;
             } catch (IOException e) {
             }
         }
@@ -64,7 +65,6 @@ public class Game {
             screen.close();
         } catch (IOException e) {
         }
-
     }
 
     private boolean processKey(KeyStroke key) {
