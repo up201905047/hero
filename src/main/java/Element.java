@@ -26,7 +26,7 @@ public abstract class Element {
     public Position moveLeft() {
         return position.moveLeft();
     }
-    
+
     public Position moveRight() {
         return position.moveRight();
     }

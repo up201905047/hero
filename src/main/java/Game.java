@@ -56,6 +56,7 @@ public class Game {
                 draw();
                 KeyStroke k = screen.readInput();
                 ctrl = processKey(k);
+                arena.retrieveCoins();
             } catch (IOException e) {
             }
         }
